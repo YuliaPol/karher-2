@@ -57,7 +57,7 @@ form.addEventListener('submit', function (e){
             $(location).attr('href', pageNext);
         }
         else {
-            form.submit();
+            // form.submit();
         }
     }
 });

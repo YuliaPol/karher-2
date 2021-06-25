@@ -1005,6 +1005,10 @@ body{
   left: 0px;
   right: 0px;
 }
+body, html {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
 body {
   .survey-container {
     min-height: 100vh;

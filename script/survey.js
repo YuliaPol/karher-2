@@ -125,31 +125,49 @@ $(document).ready(function (){
             $('.point_0-6').fadeIn();
             $('.point_9-10').hide();
             $('.point_7-8').hide();
+            $('.q-7-8').removeAttr('data-reqired','');
+            $('.q-9-10').removeAttr('data-reqired','');
+            $('.q-0-6').attr('data-reqired','');
         }
         if(valNps == 1) {
             $('.point_0-6').fadeIn();
             $('.point_9-10').hide();
             $('.point_7-8').hide();
+            $('.q-7-8').removeAttr('data-reqired','');
+            $('.q-9-10').removeAttr('data-reqired','');
+            $('.q-0-6').attr('data-reqired','');
         }
         if(valNps == 2) {
             $('.point_0-6').hide();
             $('.point_9-10').hide();
             $('.point_7-8').fadeIn();
+            $('.q-0-6').removeAttr('data-reqired','');
+            $('.q-9-10').removeAttr('data-reqired','');
+            $('.q-7-8').attr('data-reqired','');
         }
         if(valNps == 3) {
             $('.point_0-6').hide();
             $('.point_9-10').hide();
             $('.point_7-8').fadeIn();
+            $('.q-0-6').removeAttr('data-reqired','');
+            $('.q-9-10').removeAttr('data-reqired','');
+            $('.q-7-8').attr('data-reqired','');
         }
         if(valNps == 4) {
             $('.point_0-6').hide();
             $('.point_9-10').fadeIn();
             $('.point_7-8').hide();
+            $('.q-0-6').removeAttr('data-reqired','');
+            $('.q-7-8').removeAttr('data-reqired','');
+            $('.q-9-10').attr('data-reqired','');
         }
         if(valNps == 5) {
             $('.point_0-6').hide();
             $('.point_9-10').fadeIn();
             $('.point_7-8').hide();
+            $('.q-0-6').removeAttr('data-reqired','');
+            $('.q-7-8').removeAttr('data-reqired','');
+            $('.q-9-10').attr('data-reqired','');
         }
         else if (isNaN(valNps)){
             return false;
