@@ -1,3 +1,17 @@
+//height
+
+function resetHeight(){
+    // reset the body height to that of the inner browser
+    document.body.style.minHeight = window.innerHeight + "px";
+    if(document.querySelector('.survey-container')){
+        document.querySelector('.survey-container').style.minHeight = window.innerHeight + "px";
+    }
+}
+// reset the height whenever the window's resized
+window.addEventListener("resize", resetHeight);
+// called to initially set the height.
+resetHeight();
+
 //button back
 $('.btn-back').click(function(e){
     e.preventDefault();
