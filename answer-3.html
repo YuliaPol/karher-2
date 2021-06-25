@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css?877654556">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <title>Kärcher</title>
+</head>
+
+<body>
+    <div class="survey-container">
+        <form action="./end.html" id="main-form">
+            <div class="wrapper">
+                <div class="logo-box">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+            </div>
+            <div class="hidden-questions" style="display: block;">
+                <div class="question-main-container">
+                    <div class="question-wrapper">
+                        <p class="q-text">
+                            Возникли сложности при осуществлении возврата
+                        </p>
+                    </div>
+                    <div class=" comment-main-container" style="display: block;">
+                        <div class="comment-box main-comment-box">
+                            <div class="comment-label-wrapper">
+                                <textarea name="comment-06" class="comment-field main-comment required-main-comment"
+                                    placeholder="Комментарий"></textarea>
+                            </div>
+                            <p class="main-comment-error">* Поле обязательно к заполнению</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btns-wrapper">
+                <div class="back-wrapper">
+                    <a href="./index.html" class="btn-back">Назад</a>
+                </div>
+                <div class="submit-wrapper">
+                    <button class="save-btn">Готово</button>
+                </div>
+            </div>
+        </form>
+        <div class="error-container error">
+            Пожалуйста, выберете один из вариантов
+        </div>
+    </div>
+</body>
+<script src="./script/survey.js"></script>
+<script src="./script/surveyValidation.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css?34534534">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <title>Kärcher</title>
+</head>
+<body>
+    <div class="survey-container">
+            <div class="wrapper">
+                <div class="logo-box">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="main-question-box">
+                    <p class="q-text">
+                        Пожалуйста, оставьте свои контакты, чтобы мы могли  связаться с вами по оставленному комментарию
+                    </p>
+                </div>
+            </div>
+        <form id="contacts-form" action="end.html">
+            <div class="contacts-gray-block">
+                <div class="wrapper">
+                    <div class="contact-box">
+                        <p class="contact-label name-label">Ваше имя</p>
+                        <input class="data-field" id="name" name="name" type="text" data-reqired>
+                        <p class="data-error"></p>
+                    </div>
+                    <div class="contact-box">
+                        <p class="contact-label phone-label">Ваш номер телефона</p>
+                        <input class="data-field only-numbers" id="phone" name="phone" type="tel" data-reqired>
+                        <span class="phone-prefix">+</span>
+                        <p class="data-error"></p>
+                    </div>
+                    <div class="contact-box">
+                        <p class="contact-label email-label">Ваш EMAIL</p>
+                        <input class="data-field" id="email" name="email" type="text" data-reqired>
+                        <p class="data-error invalid_email">* Неправильный электронный адрес</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-submit-wrapper">
+                <button class="save-btn">Сохранить</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script/contacts.js"></script>
+</body>
+</html>
