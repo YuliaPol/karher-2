@@ -1,3 +1,9 @@
+//button back
+$('.btn-back').click(function(e){
+    e.preventDefault();
+    window.history.back();
+});
+
 /*Answers branching*/
 $('.nps-btn').on('change', function () {
     let val = $(this).val() * 1;

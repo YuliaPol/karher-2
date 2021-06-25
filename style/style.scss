@@ -1005,14 +1005,12 @@ body{
   left: 0px;
   right: 0px;
 }
-body, html {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-}
+// body, html {
+//   min-height: calc(100vh - calc(100vh - 100%));
+// }
 body {
   .survey-container {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    min-height: calc(100vh - calc(100vh - 100%));
     padding-bottom: 80px;
     position: relative;
     .btns-wrapper {
