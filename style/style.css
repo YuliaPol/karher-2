@@ -313,7 +313,7 @@ body .survey-container .hidden-questions .thx-text-wrapper {
 body .survey-container .hidden-questions .thx-text-wrapper::after {
   content: "";
   position: absolute;
-  left: calc(50% - 7.5px);
+  left: calc(50% - 15px);
   bottom: calc(100% - 1px);
   width: 0;
   height: 0;
