@@ -1192,6 +1192,7 @@ body .survey-container .hidden-questions .question-wrapper .flex-container .answ
 
 body .survey-container {
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   padding-bottom: 80px;
   position: relative;
 }
