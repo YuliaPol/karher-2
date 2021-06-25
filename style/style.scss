@@ -35,7 +35,7 @@
   padding: 20px 10px;
 }
 body{
-  font-family: HelveticaNeueCyrMedium;
+  font-family: HelveticaNeueCyrMedium, sans-serif;
   .main-page-container{
     position: fixed;
     top: 0;
@@ -637,7 +637,7 @@ body{
         background-color: #ffed00;
         background-image: -webkit-linear-gradient(bottom, #ffed00, #fff466);
         cursor: pointer;
-        font-family: HelveticaNeueCyrMedium;
+        font-family: HelveticaNeueCyrMedium, sans-serif;
       }
     }
     #contacts-form{
@@ -1035,7 +1035,7 @@ body {
         text-align: center;
         background-color: #d0d2d4;
         cursor: pointer;
-        font-family: HelveticaNeueCyrMedium;
+        font-family: HelveticaNeueCyrMedium, sans-serif;
         text-decoration: none;
         margin-top: 45px;
       }
