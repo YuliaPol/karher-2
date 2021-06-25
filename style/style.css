@@ -156,6 +156,12 @@ body .survey-container .wrapper .main-question-box .q-text {
   line-height: 28px;
 }
 
+body .survey-container .wrapper .main-question-box .q-text.bold-text {
+  font-size: 26px;
+  line-height: 32px;
+  font-family: HelveticaNeueCyrBlack, Helvetica,  sans-serif;
+}
+
 body .survey-container .wrapper .main-question-box .range10 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,32 +307,22 @@ body .survey-container .hidden-questions .thx-text-wrapper {
   padding-top: 20px;
   padding-bottom: 10px;
   padding-bottom: 25px;
-}
-
-body .survey-container .hidden-questions .thx-text-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 25px;
-  right: 25px;
-  height: 15px;
-  background: url(./../img/border-top.svg);
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: contain;
+  background: #d0d2d4;
 }
 
 body .survey-container .hidden-questions .thx-text-wrapper::after {
   content: "";
   position: absolute;
-  bottom: 0px;
-  left: 25px;
-  right: 25px;
-  height: 10px;
-  background: url(./../img/border-bottom.svg);
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: contain;
+  left: calc(50% - 7.5px);
+  bottom: calc(100% - 1px);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #d0d2d4;
+  clear: both;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 body .survey-container .hidden-questions .thx-text-wrapper .dark-txt {
@@ -338,7 +334,7 @@ body .survey-container .hidden-questions .thx-text-wrapper .dark-txt {
 }
 
 body .survey-container .hidden-questions .thx-text-wrapper .light-txt {
-  font-family: HelveticaNeueCyrLight;
+  font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
   font-size: 16px;
   line-height: 22px;
   margin-top: 10px;
@@ -406,18 +402,18 @@ body .survey-container .hidden-questions .question-wrapper .flex-container .answ
   padding-left: 5px;
   color: #2b2b2b;
   display: inline-block;
-  font-family: HelveticaNeueCyrLight;
+  font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
 }
 
 body .survey-container .hidden-questions .question-wrapper .flex-container .answers-wrapper .radio_container .answer-font {
   font-size: 16px;
   color: #333333;
-  font-family: HelveticaNeueCyrLight;
+  font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
 }
 
 body .survey-container .hidden-questions .question-wrapper .flex-container .answers-wrapper .radio_container .checkmark {
   position: absolute;
-  top: 1px;
+  top: -2px;
   left: 0px;
   width: 16px;
   height: 16px;
@@ -552,7 +548,7 @@ body .survey-container .hidden-questions .question-wrapper .flex-container .answ
   padding-left: 5px;
   color: #2b2b2b;
   display: inline-block;
-  font-family: HelveticaNeueCyrLight;
+  font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
 }
 
 body .survey-container .hidden-questions .question-wrapper .flex-container .answers-wrapper .sub-answer-wrapper .sab-radio_container .checkmark {
@@ -669,32 +665,6 @@ body .survey-container .hidden-questions .comment-box {
   position: relative;
 }
 
-body .survey-container .hidden-questions .comment-box::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 25px;
-  right: 25px;
-  height: 15px;
-  background: url(./../img/border-top.svg);
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: contain;
-}
-
-body .survey-container .hidden-questions .comment-box::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 25px;
-  right: 25px;
-  height: 10px;
-  background: url(./../img/border-bottom.svg);
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: contain;
-}
-
 body .survey-container .hidden-questions .comment-box .comment-label-wrapper {
   position: relative;
 }
@@ -705,14 +675,15 @@ body .survey-container .hidden-questions .comment-box .comment-label-wrapper .co
   outline: none;
   background: transparent;
   width: 100%;
-  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   position: relative;
   border-radius: 0;
   z-index: 2;
-  min-height: 88px;
-  font-family: HelveticaNeueCyrLight;
+  min-height: 22px;
+  height: 30px;
+  font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 body .survey-container .hidden-questions .comment-box .comment-label-wrapper .comment-field::-webkit-input-placeholder {
@@ -795,10 +766,10 @@ body .survey-container #contacts-form .contacts-gray-block .wrapper .contact-box
 }
 
 body .survey-container #contacts-form .contacts-gray-block .wrapper .contact-box .contact-label {
+  font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
   font-size: 14px;
   color: #A09B9B;
   font-style: normal;
-  font-weight: normal;
   position: relative;
   padding-left: 35px;
   margin-bottom: 20px;
@@ -868,6 +839,7 @@ body .survey-container #contacts-form .contacts-gray-block .wrapper .contact-box
   color: #E1032E;
   margin-top: 10px;
   display: none;
+  font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
 }
 
 body .survey-container #contacts-form .contacts-submit-wrapper {

@@ -129,6 +129,11 @@ body{
           font-size: 24px;
           color: #000000;
           line-height: 28px;
+          &.bold-text {
+            font-size: 26px;
+            line-height: 32px;
+            font-family: HelveticaNeueCyrBlack, Helvetica,  sans-serif;
+          }
         }
         .range10{
           display: flex;
@@ -237,29 +242,19 @@ body{
         padding-top: 20px;
         padding-bottom: 10px;
         padding-bottom: 25px;
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0px;
-          left: 25px;
-          right: 25px;
-          height: 15px;
-          background: url(./../img/border-top.svg);
-          background-position: center;
-          background-repeat: repeat-x;
-          background-size: contain;
-        }
+        background: #d0d2d4;
         &::after {
           content: "";
           position: absolute;
-          bottom: 0px;
-          left: 25px;
-          right: 25px;
-          height: 10px;
-          background: url(./../img/border-bottom.svg);
-          background-position: center;
-          background-repeat: repeat-x;
-          background-size: contain;
+          left: calc(50% - 7.5px);
+          bottom: calc(100% - 1px);
+          width: 0;
+          height: 0;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-top: 15px solid #d0d2d4;
+          clear: both;
+          transform: rotate(180deg);
         }
         .dark-txt{
           color: #2b2b2b;
@@ -269,7 +264,7 @@ body{
           text-transform: uppercase;
         }
         .light-txt{
-          font-family: HelveticaNeueCyrLight;
+          font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;;
           // font-weight: 400;
           font-size: 16px;
           line-height: 22px;
@@ -322,16 +317,16 @@ body{
                 padding-left: 5px;
                 color: #2b2b2b;
                 display: inline-block;
-                font-family: HelveticaNeueCyrLight;
+                font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;;
               }
               .answer-font{
                 font-size: 16px;
                 color: #333333;
-                font-family: HelveticaNeueCyrLight;
+                font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;;
               }
               .checkmark{
                 position: absolute;
-                top: 1px;
+                top: -2px;
                 left: 0px;
                 width: 16px;
                 height: 16px;
@@ -449,7 +444,7 @@ body{
                   padding-left: 5px;
                   color: #2b2b2b;
                   display: inline-block;
-                  font-family: HelveticaNeueCyrLight;
+                  font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;;
                 }
                 .checkmark{
                   position: absolute;
@@ -554,30 +549,6 @@ body{
       .comment-box{
         padding: 25px;
         position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0px;
-          left: 25px;
-          right: 25px;
-          height: 15px;
-          background: url(./../img/border-top.svg);
-          background-position: center;
-          background-repeat: repeat-x;
-          background-size: contain;
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: 0px;
-          left: 25px;
-          right: 25px;
-          height: 10px;
-          background: url(./../img/border-bottom.svg);
-          background-position: center;
-          background-repeat: repeat-x;
-          background-size: contain;
-        }
         .comment-label-wrapper{
           position: relative;
           .comment-field{
@@ -586,14 +557,15 @@ body{
             outline: none;
             background: transparent;
             width: 100%;
-            font-weight: 500;
             font-size: 16px;
             line-height: 22px;
             position: relative;
             border-radius: 0;
             z-index: 2;
-            min-height: 88px;
-            font-family: HelveticaNeueCyrLight;
+            min-height: 22px;
+            height: 30px;
+            font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;;
+            border-bottom: 1px solid #c6c6c6;
           }
           .comment-field::placeholder{
             color: #A09B9B;
@@ -652,10 +624,10 @@ body{
             margin-top: 15px;
             position: relative;
             .contact-label{
+              font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
               font-size: 14px;
               color: #A09B9B;
               font-style: normal;
-              font-weight: normal;
               position: relative;
               padding-left: 35px;
               margin-bottom: 20px;
@@ -716,6 +688,7 @@ body{
               color: #E1032E;
               margin-top: 10px;
               display: none;
+              font-family: HelveticaNeueCyrLight, Helvetica,  sans-serif;
             }
           }
         }

@@ -29,16 +29,16 @@ form.addEventListener('submit', function (e){
         }
     }
 
-    for (let i = 0; i < mainComment.length; i++){
-        let val = mainComment[i].value;
-        if(val.length < 1){
-            erroreArrayElements.push(mainComment[i]);
-            $(mainComment[i]).on('click', function () {
-                $(this).parents('.main-comment-box').find('.main-comment-error').hide();
-            });
-            $(mainComment[i]).parents('.main-comment-box').find('.main-comment-error').fadeIn();
-        }
-    }
+    // for (let i = 0; i < mainComment.length; i++){
+    //     let val = mainComment[i].value;
+    //     if(val.length < 1){
+    //         erroreArrayElements.push(mainComment[i]);
+    //         $(mainComment[i]).on('click', function () {
+    //             $(this).parents('.main-comment-box').find('.main-comment-error').hide();
+    //         });
+    //         $(mainComment[i]).parents('.main-comment-box').find('.main-comment-error').fadeIn();
+    //     }
+    // }
 
     for (let i = 0; i < reqComment.length; i++){
         let val = reqComment[i].value;
