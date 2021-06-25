@@ -995,6 +995,11 @@ body .survey-container .hidden-questions .question-wrapper .flex-container .answ
   background-image: url("./../img/icon-star-a.svg");
 }
 
+.rating-list > input:not(:checked) ~ label:hover,
+.rating-list > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("./../img/icon-star-a.svg");
+}
+
 .smile-list {
   padding-top: 25px;
   display: -webkit-box;

@@ -831,10 +831,10 @@ body{
   & > input:checked ~ label ~ label {
     background-image: url('./../img/icon-star-a.svg');
   }
-  // & > input:not(:checked) ~ label:hover,
-  // & > input:not(:checked) ~ label:hover ~ label {
-  //   background-image: url('./../img/icon-star-a.svg');
-  // }
+  & > input:not(:checked) ~ label:hover,
+  & > input:not(:checked) ~ label:hover ~ label {
+    background-image: url('./../img/icon-star-a.svg');
+  }
 
 }
 .smile-list {
